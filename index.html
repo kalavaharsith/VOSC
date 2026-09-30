@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f3ec">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game" aria-labelledby="game-title">
+    <header class="game__header">
+      <p class="eyebrow">THE CLASSIC, REFRAMED</p>
+      <h1 id="game-title">Tic-Tac-Toe<span>.</span></h1>
+      <p class="subtitle">Three in a row wins. Your move.</p>
+    </header>
+
+    <section class="play-area" aria-label="Tic-Tac-Toe game">
+      <div class="game-info">
+        <p class="turn" id="game-status" aria-live="polite">X's turn</p>
+        <span class="round-label" id="round-label">ROUND 01</span>
+      </div>
+
+      <div class="board" role="group" aria-label="Game board">
+        <button class="cell" type="button" data-cell="0" aria-label="Row 1, column 1"></button>
+        <button class="cell" type="button" data-cell="1" aria-label="Row 1, column 2"></button>
+        <button class="cell" type="button" data-cell="2" aria-label="Row 1, column 3"></button>
+        <button class="cell" type="button" data-cell="3" aria-label="Row 2, column 1"></button>
+        <button class="cell" type="button" data-cell="4" aria-label="Row 2, column 2"></button>
+        <button class="cell" type="button" data-cell="5" aria-label="Row 2, column 3"></button>
+        <button class="cell" type="button" data-cell="6" aria-label="Row 3, column 1"></button>
+        <button class="cell" type="button" data-cell="7" aria-label="Row 3, column 2"></button>
+        <button class="cell" type="button" data-cell="8" aria-label="Row 3, column 3"></button>
+      </div>
+
+      <div class="game-footer">
+        <p class="score"><span class="score__x">X</span> <span id="x-score">0</span><span class="score__divider">/</span><span id="o-score">0</span> <span class="score__o">O</span></p>
+        <button class="reset-button" id="reset-button" type="button" aria-label="Start a new round">
+          <span aria-hidden="true">↻</span> New round
+        </button>
+      </div>
+    </section>
+
+    <footer class="page-footer">TWO PLAYERS <span aria-hidden="true">·</span> ONE BOARD</footer>
+  </main>
+</body>
+</html>
